@@ -1,0 +1,10 @@
+pipeline {
+    agent any 
+    stages {
+        stage('git') {
+            steps {
+                git credentialsId: '4f8d892e-9282-4db2-a0b8-2e2156538620', url: 'https://github.com/vigneshbalaji2262/bicsazurewp.git'd!' 
+            }
+        }
+    }
+}
